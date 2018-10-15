@@ -1,0 +1,65 @@
+---
+layout: default
+---
+<div class="wrapper">
+<div class="page">
+
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <h6><a href="#Governor">Governor</a> | <a href="#Senators">Senators</a> | <a href="#Representatives">Representatives</a> | <a href="#StateLegislature">State Legislature</a></h6>
+    To contribute to this list, click here.
+  </header>
+
+  <h4><a name="Governor">Governor</a></h4>
+
+  {% for legislator in site.legislators %}
+    {% if legislator.state == page.state and legislator.office == "Governor" %}
+
+      <h6>{{ legislator.name }}</h6>
+
+      {{ legislator.content | markdownify }}
+
+    {% endif %}
+  {% endfor %}
+
+
+  <h4><a name="Senators">Senators</a></h4>
+
+  {% for legislator in site.legislators %}
+    {% if legislator.state == page.state and legislator.office == "Senator" %}
+
+      <h6>{{ legislator.name }}</h6>
+
+      {{ legislator.content | markdownify }}
+
+    {% endif %}
+  {% endfor %}
+
+  <h4><a name="Representatives">Representatives</a></h4>
+
+  {% for legislator in site.legislators %}
+    {% if legislator.state == page.state and legislator.office == "Representative" %}
+
+      <h6>{{ legislator.name }}</h6>
+
+      {{ legislator.content | markdownify }}
+
+    {% endif %}
+  {% endfor %}
+
+  <h4><a name="StateLegislature">State Legislature</a></h4>
+
+  {% for legislator in site.legislators %}
+    {% if legislator.state == page.state and legislator.office == "State Legislature" %}
+
+      <h6>{{ legislator.name }}</h6>
+
+      {{ legislator.content | markdownify }}
+
+    {% endif %}
+  {% endfor %}
+
+
+</div>
+</div>
