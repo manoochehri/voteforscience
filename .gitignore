@@ -1,0 +1,15 @@
+# Caches
+.sass-cache
+
+# Mac OS stuff
+.DS_Store
+
+# IntelliJ project files
+*.iml
+
+# IntelliJ config
+.idea/
+
+# Potential private keys
+*.pem
+*.p12

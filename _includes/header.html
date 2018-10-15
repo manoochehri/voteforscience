@@ -12,6 +12,8 @@
     </a>
     <nav role="navigation">
       <ul id="js-navigation-menu" class="navigation-menu show">
+        <li class="nav-link"><a href="/climate_deniers/">Climate Deniers by State</a>
+        <li class="nav-link"><a href="/upcoming_elections/">Upcoming Elections</a>
         {% for page in site.pages %}
           {% if page.title and page.main_nav != false %}
           <li class="nav-link"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>

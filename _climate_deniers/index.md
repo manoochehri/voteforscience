@@ -1,12 +1,16 @@
 ---
 layout: page
-title: "Climate Denier List by State"
+title: Climate Deniers by State
+permalink: "/climate_deniers/"
+exclude: true
 ---
 
 <ul>
-  {% for climate_deniers in site.climate_deniers %}
-    <li>
-      <a href="{{ climate_deniers.url }}">{{ climate_deniers.title }}</a>
-    </li>
+  {% for climate_denier in site.climate_deniers %}
+    {% unless climate_denier.exclude %}
+      <!-- li -->
+        <a href="{{ climate_denier.url }}"><h3>{{ climate_denier.link_text }}</h3></a>
+      <!-- /li -->
+      {% endunless %}
   {% endfor %}
 </ul>

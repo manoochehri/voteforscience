@@ -90,7 +90,7 @@ pre code.hljs {
 			background-color: rgba(0,0,0,0.2);
 			padding: 6em 1em !important;
 			@include media($tablet) {
-				padding: 9em 1em !important;
+				padding: 2em 1em !important;
 			}
 		}
 	}
@@ -100,6 +100,7 @@ pre code.hljs {
 *	Header
 */
 .navigation {
+	background-color: #003366;
 	box-shadow: 0 2px $highlight-color;
 	padding: 0 1em;
 	margin: 0;
