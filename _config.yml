@@ -20,7 +20,7 @@ description: >
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://voteforscience.us" # the base hostname & protocol for your site
+url: "https://voteforscience.us" # the base hostname & protocol for your site
 cover: "/assets/header_image.png"
 logo: "/assets/logo.png"
 
@@ -36,6 +36,7 @@ jekyll-archives:
   enabled:
     - categories
     - tags
+    - states
   layout: 'archive'
   permalinks:
     category: '/category/:name/'
@@ -48,6 +49,9 @@ collections:
   climate_deniers:
     output: true
     permalink: /climate_deniers/:name
+  legislators:
+    output: true
+    permalink: /legislators/:name
 
 # Category descriptions (for archive pages)
 descriptions:

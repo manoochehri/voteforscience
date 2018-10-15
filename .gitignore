@@ -1,5 +1,6 @@
 # Caches
 .sass-cache
+.sass-cache/
 
 # Mac OS stuff
 .DS_Store
